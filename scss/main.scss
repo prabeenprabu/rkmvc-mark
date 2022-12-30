@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+$light: #edf2f4;
+$red: #e63946;
+
+body {
+    color: $light;
+    font-family: "Montserrat", sans-serif;
+}
+
+.start .container {
+    height: 50vh;
+
+    .row {
+        position: relative;
+    }
+    .alert {
+        position: absolute;
+        z-index: 1000;
+        top: 90%;
+        left: 0;
+        font-size: 1.3rem;
+        color: transparent;
+    }
+}
+
+// --------toggles----------------
+.alertShow {
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.alertHide {
+    color: $dark;
+}
+// ---------------keyframes---------
+@keyframes fade-in {
+    0% {
+        color: transparent;
+        opacity: 0;
+    }
+    100% {
+        color: $red;
+        opacity: 1;
+    }
+}
