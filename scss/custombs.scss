@@ -5,9 +5,9 @@ $danger: #e63946;
 $dark: #353535;
 $light: #edf2f4;
 
-$custom-colors:(
+$custom-colors: (
     "teal": #3c6e71,
-    "lt-green": #74c69d
+    "lt-green": #74c69d,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
