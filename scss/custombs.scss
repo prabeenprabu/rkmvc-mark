@@ -1,1 +1,14 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$danger: #e63946;
+$dark: #353535;
+$light: #edf2f4;
+
+$custom-colors:(
+    "teal": #3c6e71
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
